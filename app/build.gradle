@@ -62,7 +62,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "org.monora.uprotocol.client.androidx"
+        applicationId "org.monora.uprotocol.client.android"
         minSdkVersion 19
         targetSdkVersion 31
         versionCode 106
@@ -88,8 +88,8 @@ android {
 
         debug {
             minifyEnabled false
-            applicationIdSuffix '.xtest'
-            versionNameSuffix '-X'
+            applicationIdSuffix '.debug'
+            versionNameSuffix '-DEBUG'
         }
     }
 
@@ -97,7 +97,7 @@ android {
 
     productFlavors {
         fossReliant {
-            applicationId = 'com.erneandroid.TrebleShotX'
+            applicationId = 'com.genonbeta.TrebleShot'
             dimension 'mode'
             signingConfig signingConfigs.gbDistribution
         }
